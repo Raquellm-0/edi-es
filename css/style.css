@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* propriedades padroes */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,12 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* cabeçalho */
+body {
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+}
+
 .cabecalho {
     width: 100%;
     height: 70px;
@@ -31,7 +35,6 @@
     width: 100%;
 }
 
-/* propriedades menu */
 .menu {
     display: flex;
     align-items: center;
@@ -144,6 +147,66 @@
 .mobile-menu {
     display: none;
 }
+
+.forma-1-edpass{
+    position: absolute;
+    top: 15vh; 
+    right: 80vw; 
+    z-index: 1;
+    width: 20vw; 
+}
+
+
+.forma-2-edpass{
+    position: absolute;
+    top: 77vh;
+    right: 80vw;
+    z-index: 1;
+    width: 20vw; 
+}
+
+.forma-3-edpass{
+    position: absolute;
+    top: 10vh;
+    left: 89vw;
+    z-index: 1;
+    width: 20vw;
+    height: 100vh;
+}
+
+.forma-4-edpass{
+    position: absolute;
+    top: 75vh;
+    left: 85vw;
+    z-index: 1;
+}
+
+.box-edpass{
+    width: 85%;
+    height: 750px;
+    max-width: 2000px;
+    z-index: 2;
+    backdrop-filter: blur(0px);
+    background-color: rgba(248, 245, 246, 0.705);
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    position: absolute;
+}
+
+.section-b{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 
 @media(max-width: 1500px) {
     .logo {
@@ -358,149 +421,261 @@
 
 }
 
-.section-forma{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 255, 255, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ed{
+    margin-top: -50rem;
     position: relative;
-}
-
-/* 
-.forma-1 {
-    position: fixed;
-    top: 15vh; 
-    right: 80vw; 
-    z-index: 1;
-    width: 20vw; 
-}
-
-
-.forma-2{
-    position: absolute;
-    top: 80vh;
-    right: 80vw;
-    z-index: 1;
-    width: 20vw; 
-}
-
-.forma-3{
-    position: absolute;
-    top: 10vh;
-    left: 90vw;
-    z-index: 1;
-    width: 20vw;
-    height: 100vh;
-}
-
-.formaCadastro-4{
-    position: fixed;
-    top: 75vh;
-    left: 85vw;
-    z-index: 1;
-    width: 20vw; 
-} */
-
-.box{
-    width: 85%;
-    height: 750px;
-    max-width: 2000px;
+    text-align: center;
+    font-size: 35px;
     z-index: 2;
-    backdrop-filter: blur(0px);
-    background-color: rgba(248, 245, 246, 0.705);
-    display: flex;
-    align-items: self-start;
-    justify-content: space-between;
-    border-radius: 12px;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: all .5s ease;
 }
 
-.area-card{
-    width: 100%;
-    height: 750px;
-    display: flex;
-    justify-content: space-around;
+.area-card-edpass{
+    width: 80%;
+    height: 630px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
+    margin-top: 10px;
+    margin-left: 190px;
+    justify-items: center;
 }
 
-.card{
-    align-items: center;
+.cardRosa-edpass{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 530px;
+    background-image: url('../img/edpassCardrosa.svg');
+    background-position: 0%;
+    background-size: cover;
+    background-position: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease;
+    justify-items: center;
 }
 
-.card:hover{
+.cardVerde-edpass{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 530px;
+    background-image: url('../img/edpassCardverde.svg');
+    background-position: 0%;
+    background-size: cover;
+    background-position: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease;
+    justify-items: center;
+}
+
+.card-img-edpass img{
+    width: 97%;
+    height: 160px;
+    object-fit: cover;
+    margin: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.card-content-edpass{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    line-height: 1.0;
+}
+
+.card-edpass:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.title-card{
-    font-size: 25px;
-    z-index: 2;
-    width: 100%;
-    justify-content: center;
-    display: flex;
+.card1-edpass:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
-.sub-card{
-    font-size: 20px;
-    z-index: 2;
+.area-texto-edpass{
+    overflow: auto;
     width: 100%;
-    justify-content: center;
-    display: flex;
+    max-height: 120px;
+    margin-top: 10px;
 }
 
-.img-card{
+.title-card-edpass{
     width: 100%;
-    height: 100%;
-    z-index: 1;
+    font-size: 1.2rem;
+    margin: 15px auto;
+    margin-top: -5px;
 }
 
-.btn-cd1{
-    width: 100%;
-    justify-content: center;
-    display: flex;
+.text-card-edpass{
+    font-size: 14px;
+    line-height: 1.3;
+    overflow: hidden;
+    color: #505050;
+    scrollbar-gutter: stable both-edges;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ffffff00;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a1a0a3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #6b6869;
+}
+
+.btn-cardVerde-edpass{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
     z-index: 2;
-    padding: 10px 20px;
     border-radius: 10px;
     color: #007E70;
     background-color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #007E70;
+    margin: 50px auto 0;
+    text-align: center;
 }
 
-.btn-cd1:hover{
+.btn-cardVerde-edpass:hover{
     color: white;
     background-color: #007E70;
     cursor: pointer;
 }
 
-.btn-cd2{
-    width: 100%;
-    justify-content: center;
-    display: flex;
+.btn-cardRosa-edpass{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
     z-index: 2;
-    padding: 10px 20px;
     border-radius: 10px;
     color: #FF3877;
     background-color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #FF3877;
+    margin: 50px auto 0;
+    text-align: center;
 }
 
-.btn-cd2:hover{
+.btn-cardRosa-edpass:hover{
     color: white;
     background-color: #FF3877;
     cursor: pointer;
 }
 
-.area-card-txt{
+/* modal */
+
+.modalRosa1-edpass, .modalRosa2-edpass{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 20px 20px;
-    z-index: 3;
+    height: 100%;
+    background-image: url(../img/edpassModalRosa.svg);
+    justify-content: center;
+    align-items: center;
 }
 
+.modalVerde1-edpass, .modalVerde2-edpass{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/edpassModalVerde.svg);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-edpass{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    display: flex;
+    gap: 20px;
+}
+
+.modal-img-edpass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gg-img-edpass{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.modal-img-p-edpass{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.modal-texto-edpass{
+    flex: 1;
+}
+
+.btn-ModalVerde-edpass{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 10px;
+    color: #007E70;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #007E70;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.btn-ModalVerde-edpass:hover{
+    color: white;
+    background-color: #007E70;
+    cursor: pointer;
+}
+
+.btn-ModalRosa-edpass{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 10px;
+    color: #FF3877;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #FF3877;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.btn-ModalRosa-edpass:hover{
+    color: white;
+    background-color: #FF3877;
+    cursor: pointer;
+}
