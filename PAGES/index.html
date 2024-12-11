@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edições Passadas</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
 </head>
 <body> 
     <header class="cabecalho">
@@ -90,6 +91,7 @@
                 <div class="card-content-edpass">
                     <h2 class="title-card-edpass">Natal Encantado no Bosque</h2>
                     <div class="area-texto-edpass">
+                        <!-- A descrição (texto) deve possuir no mínimo 210 caracteres -->
                         <p class="text-card-edpass">✨Encante-se com o Natal no Bosque!
                             🎁Expositores com presentes únicos e artesanato
                             🍪Delícias natalinas para toda a família
@@ -104,7 +106,7 @@
                             
                             Venha celebrar o Natal com a gente!🎄</p>
                         </div>
-                        <button onclick="openModal(1)" class="btn-cardRosa-edpass">Saiba Mais!</button>
+                        <button id="btn-cardRosa1-edpass">Saiba Mais!</button>
                     </div>
                 </div>
             <div class="cardVerde-edpass">
@@ -114,11 +116,12 @@
                 <div class="card-content-edpass">
                     <h2 class="title-card-edpass">Especial das Crianças</h2>
                     <div class="area-texto-edpass">
+                        <!-- A descrição (texto) deve possuir no mínimo 210 caracteres -->
                         <p class="text-card-edpass">Prepare-se para uma edição mais que especial da nossa feira em comemoração ao Dia das Crianças! 🎉 Vai ter muita diversão!!
 
                             Venha curtir com a gente e fazer desse dia um momento inesquecível para toda a família! 💚</p>
                     </div>
-                    <button onclick="openModal(2)" class="btn-cardVerde-edpass">Saiba Mais!</button>
+                    <button id="btn-cardVerde1-edpass">Saiba Mais!</button>
                 </div>
             </div>
                 <div class="cardRosa-edpass">
@@ -128,125 +131,31 @@
                     <div class="card-content-edpass">
                         <h2 class="title-card-edpass">Um Sonho de Primavera</h2>
                         <div class="area-texto-edpass">
+                            <!-- A descrição (texto) deve possuir no mínimo 210 caracteres -->
                             <p class="text-card-edpass">Um Sonho de Primavera🌸
                                 
                                 Prepare-se para mais uma edição inesquecível da Feira Bosque da Paz! Celebrando “Um Sonho de Primavera”, onde a natureza, a cultura e a arte florescem em perfeita harmonia. Venha viver momentos mágicos, explorar produtos artesanais únicos e se encantar com a beleza da estação mais colorida do ano.</p>
                             </div>
-                            <button onclick="openModal(3)" class="btn-cardRosa-edpass">Saiba Mais!</button>
+                            <button id="btn-cardRosa2-edpass">Saiba Mais!</button>
                         </div>
                     </div>
                     <div class="cardVerde-edpass">
-                         <div class="card-img-edpass">
+                        <div class="card-img-edpass">
                              <img src="../img/edpassCard1.png" alt="Imagem do Card 1">
-                         </div>
-                         <div class="card-content-edpass">
+                        </div>
+                        <div class="card-content-edpass">
                              <h2 class="title-card-edpass">2 Anos de Magia</h2>
-                             <div class="area-texto-edpass">
+                            <div class="area-texto-edpass">
+                                <!-- A descrição (texto) deve possuir no mínimo 210 caracteres -->
                                  <p class="text-card-edpass">🎪✨ **Celebre conosco dois anos de magia na Feira Bosque da Paz!** ✨🎉
          
                                      É com grande alegria que convidamos todos vocês para participar do nosso aniversário , que este ano está trazendo a magia do circo! 🎈🤹‍♀️
                                      Venha celebrar a cultura, a arte e a alegria conosco na Feira Bosque da Paz! Não perca essa oportunidade de se encantar com a magia do circo e apoiar nossos talentosos artistas locais. 🎉✨</p>
-                             </div>
-                             <button onclick="openModal(4)" class="btn-cardVerde-edpass">Saiba Mais!</button>
-                         </div>
-                     </div>
-        </div>
-        <div id="modal-1-edpass" id="modalRosa1-edpass">
-            <div class="modal-content-edpass">
-                <span class="close" onclick="closeModal(1)">&times;</span>
-                <div class="modal-img-edpass">
-                    <img src="#" alt="Imagem 1 do Modal" class="gg-img-edpass">
-                    <div class="modal-img-p-edpass">
-                        <img src="#" alt="Imagem 2 do Modal">
-                        <img src="#" alt="Imagem 3 do Modal">
-                        <img src="#" alt="Imagem 4 do Modal">
-                        <img src="#" alt="Imagem 5 do Modal">
+                            </div>
+                             <button id="btn-cardVerde2-edpass">Saiba Mais!</button>
                     </div>
                 </div>
-                <div class="modal-texto-edpass">
-                    <h2 class="title-modal-edpass">Natal Encantado no Bosque</h2>
-                    <p>✨Encante-se com o Natal no Bosque!
-                        🎁Expositores com presentes únicos e artesanato
-                        🍪Delícias natalinas para toda a família
-                        🎶Apresentações musicais e atrações especiais
-                        E muito mais esperando por você!
-                        
-                        Venha celebrar o Natal com a gente!🎄Encante-se com o Natal no Bosque! Expositores com presentes únicos, artesanato, delícias natalinas, apresentações. Encante-se com o Natal no Bosque! Expositores com presentes únicos, artesanato, delícias natalinas, apresentações musicais, atrações especiais e surpresas aguardam por você. Venha viver a magia!✨ Encante-se com o Natal no Bosque!
-                        🎁Expositores com presentes únicos e artesanato
-                        🍪Delícias natalinas para toda a família
-                        🎶Apresentações musicais e atrações especiais
-                        E muito mais esperando por você!
-                        
-                        Venha celebrar o Natal com a gente!🎄</p>
-                        <button class="btn-ModalRosa-edpass" onclick="closeModal(1)">Voltar</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-2-edpass" id="modalVerde1-edpass">
-            <div class="modal-content-edpass">
-                <span class="close" onclick="closeModal(2)">&times;</span>
-                <div class="modal-img-edpass">
-                    <img src="#" alt="Imagem 1 do Modal" class="gg-img-edpass">
-                    <div class="modal-img-p-edpass">
-                        <img src="#" alt="Imagem 2 do Modal">
-                        <img src="#" alt="Imagem 3 do Modal">
-                        <img src="#" alt="Imagem 4 do Modal">
-                        <img src="#" alt="Imagem 5 do Modal">
-                    </div>
-                </div>
-                <div class="modal-texto-edpass">
-                    <h2 class="title-modal-edpass">Especial das Crianças</h2>
-                    <p>Prepare-se para uma edição mais que especial da nossa feira em comemoração ao Dia das Crianças! 🎉 Vai ter muita diversão!!
-
-                        Venha curtir com a gente e fazer desse dia um momento inesquecível para toda a família! 💚</p>
-                        <button class="btn-ModalVerde-edpass" onclick="closeModal(2)">Voltar</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-3-edpass" id="modalRosa2-edpass">
-            <div class="modal-content-edpass">
-                <span class="close" onclick="closeModal(3)">&times;</span>
-                <div class="modal-img-edpass">
-                    <img src="#" alt="Imagem 1 do Modal" class="gg-img-edpass">
-                    <div class="modal-img-p-edpass">
-                        <img src="#" alt="Imagem 2 do Modal">
-                        <img src="#" alt="Imagem 3 do Modal">
-                        <img src="#" alt="Imagem 4 do Modal">
-                        <img src="#" alt="Imagem 5 do Modal">
-                    </div>
-                </div>
-                <div class="modal-texto-edpass">
-                    <h2 class="title-modal-edpass">Um Sonho de Primavera</h2>
-                    <p>Um Sonho de Primavera🌸
-                                
-                        Prepare-se para mais uma edição inesquecível da Feira Bosque da Paz! Celebrando “Um Sonho de Primavera”, onde a natureza, a cultura e a arte florescem em perfeita harmonia. Venha viver momentos mágicos, explorar produtos artesanais únicos e se encantar com a beleza da estação mais colorida do ano.</p>
-                        <button class="btn-ModalRosa-edpass" onclick="closeModal(3)">Voltar</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-4-edpass" id="modalVerde2-edpass">
-            <div class="modal-content-edpass">
-                <span class="close" onclick="closeModal(4)">&times;</span>
-                <div class="modal-img-edpass">
-                    <img src="#" alt="Imagem 1 do Modal" class="gg-img-edpass">
-                    <div class="modal-img-p-edpass">
-                        <img src="#" alt="Imagem 2 do Modal">
-                        <img src="#" alt="Imagem 3 do Modal">
-                        <img src="#" alt="Imagem 4 do Modal">
-                        <img src="#" alt="Imagem 5 do Modal">
-                    </div>
-                </div>
-                <div class="modal-texto-edpass">
-                    <h2 class="title-modal-edpass">2 Anos de Magia</h2>
-                    <p>🎪✨ **Celebre conosco dois anos de magia na Feira Bosque da Paz!** ✨🎉
-         
-                        É com grande alegria que convidamos todos vocês para participar do nosso aniversário , que este ano está trazendo a magia do circo! 🎈🤹‍♀️
-                        Venha celebrar a cultura, a arte e a alegria conosco na Feira Bosque da Paz! Não perca essa oportunidade de se encantar com a magia do circo e apoiar nossos talentosos artistas locais. 🎉✨</p>
-                        <button class="btn-Modalverde-edpass" onclick="closeModal(4)">Voltar</button>
-                </div>
-            </div>
         </div>
     </main>
-    <script src="../JS/script.js"></script>
 </body>
 </html>

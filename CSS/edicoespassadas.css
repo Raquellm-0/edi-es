@@ -518,6 +518,7 @@ body {
     overflow: hidden;
     color: #505050;
     scrollbar-gutter: stable both-edges;
+    text-align: center;
 }
 
 ::-webkit-scrollbar{
@@ -539,7 +540,7 @@ body {
     background: #6b6869;
 }
 
-.btn-cardVerde-edpass{
+#btn-cardVerde1-edpass, #btn-cardVerde2-edpass{
     display: inline-block;
     width: 80%;
     padding: 10px;
@@ -554,13 +555,13 @@ body {
     text-align: center;
 }
 
-.btn-cardVerde-edpass:hover{
+#btn-cardVerde1-edpass:hover, #btn-cardVerde2-edpass:hover{
     color: white;
     background-color: #007E70;
     cursor: pointer;
 }
 
-.btn-cardRosa-edpass{
+#btn-cardRosa1-edpass, #btn-cardRosa2-edpass{
     display: inline-block;
     width: 80%;
     padding: 10px;
@@ -575,7 +576,7 @@ body {
     text-align: center;
 }
 
-.btn-cardRosa-edpass:hover{
+#btn-cardRosa1-edpass:hover, #btn-cardRosa2-edpass:hover{
     color: white;
     background-color: #FF3877;
     cursor: pointer;
@@ -583,7 +584,7 @@ body {
 
 /* modal */
 
-.modalRosa1-edpass, .modalRosa2-edpass{
+/* .modalRosa1-edpass, .modalRosa2-edpass{
     display: none;
     position: fixed;
     top: 0;
@@ -678,4 +679,47 @@ body {
     color: white;
     background-color: #FF3877;
     cursor: pointer;
+} */
+
+
+/* #fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
 }
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-body p{
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+
+} */

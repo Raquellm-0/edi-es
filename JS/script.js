@@ -1,9 +1,13 @@
-function openModal(ModalID) {
-    document.getElementById(`modalRosa1-edpass-${ModalID}`).style.display = "flex";
-    document.getElementById(`modalVerde1-edpass-${ModalID}`).style.display = "flex";
-}
+// const openModalButton = document.querySelector("#open-modal");
+// const closeModalButton = document.querySelector("#close-modal");
+// const modal = document.querySelector("#modal");
+// const fade = document.querySelector("#fade");
 
-function closeModal(ModalID) {
-    document.getElementById(`modalRosa1-edpass-${ModalID}`).style.display = "none";
-    document.getElementById(`modalVerde1-edpass-${ModalID}`).style.display = "none";
-}
+// const toggleModal = () => {
+//     modal.classList.toggle("hide");
+//     fade.classList.toggle("hide");
+// }
+
+// [openModalButton, closeModalButton, fade].forEach((el) =>{
+//     el.addEventListener("click", () => console.log("teste"));
+// });
