@@ -453,7 +453,9 @@ body {
     position: relative;
     z-index: 2;
     transition: all .3s ease;
+    transform: scale(1.05);
     justify-items: center;
+    
 }
 
 .cardVerde-edpass{
@@ -469,6 +471,7 @@ body {
     position: relative;
     z-index: 2;
     transition: all .3s ease;
+    transform: scale(1.05);
     justify-items: center;
 }
 
