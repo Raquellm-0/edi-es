@@ -440,7 +440,7 @@ body {
     justify-items: center;
 }
 
-.cardRosa-edpass{
+/* .cardRosa-edpass{
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -473,6 +473,41 @@ body {
     transition: all .3s ease;
     transform: scale(1.05);
     justify-items: center;
+} */
+
+.cardRosa-edpass {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 530px;
+    background-image: url(../img/edpassCardrosa.svg);
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    justify-items: center;
+}
+
+.cardVerde-edpass {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 530px;
+    background-image: url(../img/edpassCardverde.svg);
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    justify-items: center;
+}
+
+.cardRosa-edpass:hover, .cardVerde-edpass:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-img-edpass img{
