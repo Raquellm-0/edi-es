@@ -412,7 +412,7 @@ body {
 
 }
 
-.ed{
+.ed {
     margin-top: -50rem;
     position: relative;
     text-align: center;
@@ -420,7 +420,7 @@ body {
     z-index: 2;
 }
 
-.area-card-edpass{
+.area-card-edpass {
     width: 80%;
     height: 630px;
     display: grid;
@@ -431,48 +431,13 @@ body {
     justify-items: center;
 }
 
-/* .cardRosa-edpass{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 530px;
-    background-image: url('../img/edpassCardrosa.svg');
-    background-position: 0%;
-    background-size: cover;
-    background-position: cover;
-    border-radius: 20px;
-    position: relative;
-    z-index: 2;
-    transition: all .3s ease;
-    transform: scale(1.05);
-    justify-items: center;
-    
-}
-
-.cardVerde-edpass{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 530px;
-    background-image: url('../img/edpassCardverde.svg');
-    background-position: 0%;
-    background-size: cover;
-    background-position: cover;
-    border-radius: 20px;
-    position: relative;
-    z-index: 2;
-    transition: all .3s ease;
-    transform: scale(1.05);
-    justify-items: center;
-} */
-
 .cardRosa-edpass {
     display: flex;
     flex-direction: column;
     width: 70%;
     height: 60%;
-    background-image: url(../img/edpassCardrosa.svg);
-    background-size: cover;
+    /* background-image: url(../img/edpassCardrosa.svg);
+    background-size: cover; */
     border-radius: 10px;
     position: relative;
     z-index: 2;
@@ -486,9 +451,8 @@ body {
     flex-direction: column;
     width: 70%;
     height: 60%;
-    background-image: url(../img/edpassCardverde.svg);
-    background-size: cover;
     border-radius: 10px;
+    border: 1px solid #007E70;
     position: relative;
     z-index: 2;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -496,33 +460,26 @@ body {
     justify-items: center;
 }
 
-.cardRosa-edpass:hover, .cardVerde-edpass:hover {
+/* .cardRosa-edpass:hover, .cardVerde-edpass:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+} */
 
-.card-img-edpass img{
+.card-img-edpass img {
     width: 97%;
-    height: 140px;
+    height: 160px;
     object-fit: cover;
     margin: 5px;
     border-radius: 5px;
     margin-top: 40px;
 }
 
-.card-content-edpass{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    line-height: 1.0;
-}
-
-.card-edpass:hover{
+.card-edpass:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.card1-edpass:hover{
+.card1-edpass:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -538,16 +495,17 @@ body {
     height: 100%;
 }
 
-#btn-voltar-edpass{
+#btn-voltar-edpass {
     font-size: 30px;
     margin-right: 78%;
     margin-top: 35%;
     z-index: 10;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
-#btn-cardVerde-edpass{
+#btn-cardVerde-edpass {
     display: inline-block;
     width: 70%;
     padding: 8px;
@@ -561,14 +519,14 @@ body {
     margin: 35% 15%;
     text-align: center;
 }
-#btn-cardVerde-edpass:hover{
+#btn-cardVerde-edpass:hover {
     color: white;
     background-color: #007E70;
     cursor: pointer;
     border: 1px solid #ffffff;
 }
 
-#btn-cardRosa-edpass{
+#btn-cardRosa-edpass {
     display: inline-block;
     width: 70%;
     padding: 8px;
@@ -583,9 +541,57 @@ body {
     text-align: center;
 }
 
-#btn-cardRosa-edpass:hover{
+#btn-cardRosa-edpass:hover {
     color: white;
     background-color: #FF3877;
     cursor: pointer;
     border: 1px solid #ffffff;
 }
+
+.card-content-edpass {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    line-height: 1.0;
+}
+
+/* .linha1-dec-edpass{
+    background-color: #007E70;
+    height: 15%;
+    border-right: 10px solid #007E70;
+    border-radius: 10px 0px;
+    position: fixed;
+    right: 90%;
+    transform: rotate(50deg);
+} */
+
+/* .container-card-principal{
+    width: 130%;
+    height: 51%;
+    background-color: #3F49EA;
+    position: relative;
+    top: 21%;
+    transform: rotate(150deg);
+    right: 1%;
+}
+ 
+.linha-card-principal{
+    height: 130%;
+    border-right: 10px solid rgb(255, 255, 255);
+    border-radius: 0px 10px;
+    position: fixed;
+    top: 25%;
+    right: 65%;
+    transform: rotate(89.5deg);
+}
+ 
+.linha-azul-card-principal{
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    background-color: #3F49EA;
+    transform: rotate(-30deg);
+    top: 378px;
+    right: 191px;
+    border-radius: 0px 10px;
+} */

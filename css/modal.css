@@ -184,3 +184,23 @@
     color: #666364;
     text-decoration: none;
 }
+
+.div-decoratica-do-card-ProEv {
+    width: 120%;
+    height: 40%;
+    transform: rotate(-20deg);
+    position: relative;
+    bottom: 30%;
+    left: 2%;
+    background-color: rgba(0, 126, 112, 1);
+
+    #linha-decorativa2-ProEv {
+        height: 200px;
+        border-right: 15px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        left: 23%;
+        top: 55%;
+        position: relative;
+        transform: rotate(-90deg);
+    }
+}
