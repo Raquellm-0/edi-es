@@ -148,55 +148,7 @@ body {
     display: none;
 }
 
-.forma-1-edpass{
-    position: absolute;
-    top: 15vh; 
-    right: 80vw; 
-    z-index: 1;
-    width: 20vw; 
-}
 
-.forma-3-edpass{
-    position: absolute;
-    top: 10vh;
-    left: 89vw;
-    z-index: 1;
-    width: 20vw;
-    height: 100vh;
-}
-
-.forma-4-edpass{
-    position: absolute;
-    top: 75vh;
-    left: 85vw;
-    z-index: 1;
-}
-
-.box-edpass{
-    width: 85%;
-    height: 750px;
-    max-width: 2000px;
-    z-index: 2;
-    backdrop-filter: blur(0px);
-    background-color: rgba(248, 245, 246, 0.705);
-    display: flex;
-    align-items: center;
-    border-radius: 12px;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: all .5s ease;
-    position: absolute;
-}
-
-.section-b{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 255, 255, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
 
 
 @media(max-width: 1500px) {
@@ -412,93 +364,8 @@ body {
 
 }
 
-.ed-edpass {
-    margin-top: -50rem;
-    position: relative;
-    text-align: center;
-    font-size: 35px;
-    z-index: 2;
-}
 
-.area-card-edpass {
-    width: 80%;
-    height: 630px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    margin-top: -1%;
-    margin-left: 190px;
-    justify-items: center;
-}
-
-.cardRosa-edpass {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 60%;
-    background-image: url(../img/edpassCardrosa.svg);
-    background-size: cover;
-    border-radius: 10px;
-    border: 1px solid #FF3877;
-    position: relative;
-    z-index: 2;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1);
-    justify-items: center;
-}
-
-.cardVerde-edpass {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 60%;
-    background-image: url(../img/edpassCardverde.svg);
-    background-size: cover;
-    border-radius: 10px;
-    border: 1px solid #007E70;
-    position: relative;
-    z-index: 2;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1);
-    justify-items: center;
-}
-
-.cardRosa-edpass:hover, .cardVerde-edpass:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.card-img-edpass img {
-    width: 97%;
-    height: 160px;
-    object-fit: cover;
-    margin: 5px;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.card-edpass:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.card1-edpass:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.title-card-edpass {
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-#btn-voltar-edpass {
+#btn-voltar-cb {
     font-size: 30px;
     margin-right: 78%;
     margin-top: 35%;
@@ -508,157 +375,176 @@ body {
     cursor: pointer;
 }
 
-#btn-cardVerde-edpass {
-    display: inline-block;
-    width: 70%;
-    padding: 8px;
-    z-index: 2;
-    border-radius: 10px;
-    color: #007E70;
-    background-color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 1px solid #007E70;
-    margin: 30% 15%;
+.title-cb {
+    margin-top: -50rem;
+    position: relative;
     text-align: center;
-}
-#btn-cardVerde-edpass:hover {
-    color: white;
-    background-color: #007E70;
-    cursor: pointer;
-    border: 1px solid #ffffff;
-}
-
-#btn-cardRosa-edpass {
-    display: inline-block;
-    width: 70%;
-    padding: 8px;
+    font-size: 32px;
     z-index: 2;
-    border-radius: 10px;
-    color: #FF3877;
-    background-color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 1px solid #FF3877;
-    margin: 30% 15%;
-    text-align: center;
+    font-weight: 500;
 }
 
-#btn-cardRosa-edpass:hover {
-    color: white;
-    background-color: #FF3877;
-    cursor: pointer;
-    border: 1px solid #ffffff;
-}
-
-.card-content-edpass {
+/* .pesquisar-login {
+    width: 40%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 15px;
-    line-height: 1.0;
+    align-items: center;
 }
 
-@media screen and (max-width: 510px){
-    .cardRosa-edpass {
-        display: flex;
-        flex-direction: column;
-        width: 72%;
-        height: 16rem;
-        background-image: none;
-        border: 0.5px solid #FF3877;
-        border-radius: 20px;
-        position: relative;
-        z-index: 2;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        transform: scale(1);
-        justify-items: center;
-    }
+.pesquisa {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 50px;
+}
 
-    .cardVerde-edpass {
-        display: flex;
-        flex-direction: column;
-        width: 72%;
-        height: 16rem;
-        background-image: none;
-        border: 0.5px solid #007E70;
-        border-radius: 20px;
-        position: relative;
-        z-index: 2;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        transform: scale(1);
-        justify-items: center;
-    }
+.pesquisa input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: -25px;
+    padding-left: 5px;
+} */
 
-    .area-card-edpass {
-        width: 85%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        align-items: center;
-        gap: 20px;
-        margin-top: 5%;
-        margin-left: 8%;
-        margin-bottom: 10%;
-        justify-items: center;
-    }
-    
-    .title-card-edpass {
-        width: 100%;
-        font-size: 1rem;
-        margin-top: -5%;
-        font-weight: 400;
-    }
-    
-    #btn-cardVerde-edpass {
-        display: inline-block;
-        width: 60%;
-        padding: 3px;
-        font-size: 1rem;
-        margin: 15% 20%;
-        text-align: center;
-    }
+.forma-1-cb{
+    position: absolute;
+    top: 15vh; 
+    right: 80vw; 
+    z-index: 1;
+    width: 20vw; 
+}
 
-    #btn-cardRosa-edpass {
-        display: inline-block;
-        width: 60%;
-        padding: 3px;
-        font-size: 1rem;
-        margin: 15% 20%;
-        text-align: center;
-    }
+.forma-3-cb{
+    position: absolute;
+    top: 10vh;
+    left: 89vw;
+    z-index: 1;
+    width: 20vw;
+    height: 100vh;
+}
 
-    .card-img-edpass img {
-        width: 90%;
-        height: 120px;
-        object-fit: cover;
-        margin: 10px;
-        margin-top: 15px;
-        border-radius: 5px;
-    }
+.forma-4-cb{
+    position: absolute;
+    top: 75vh;
+    left: 85vw;
+    z-index: 1;
+}
 
-    .forma-1-edpass, .forma-3-edpass, .forma-4-edpass {
-         display: none;
-    }
+.box-cb{
+    width: 85%;
+    height: 750px;
+    max-width: 2000px;
+    z-index: 2;
+    backdrop-filter: blur(0px);
+    background-color: rgba(248, 245, 246, 0.705);
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    position: absolute;
+}
 
-    .ed-edpass {
-        margin-top: -53rem;
-        position: relative;
-        text-align: center;
-        font-size: 25px;
-        z-index: 2;
-        font-weight: 400;
-    }
-    
-    .box-edpass {
-        display: none;
-    }
-    #btn-voltar-edpass {
-        display: none;
-    }
+.section-cb{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
-    body {
-        margin: 0 auto;
-        background-color: white;
-        overflow: scroll;
-    }
+.main-cb{
+    width: 150vh;
+    height: 75vh;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin-left: -54%;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-form-cb{
+    width: 90%;
+    height: 90%;
+    background-color: #007E70;
+}
+
+.form-cb{
+    width: 90%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: #adacac;
+}
+
+.form-cb-btn{
+    width: 30rem;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #007E70;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+.label-cb{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.form-cb-btn-1{
+    width: 65rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #007E70;
+    padding: 10px;
+}
+
+
+.btn-salvar-cb{
+    background-color: #007E70;
+    color: white;
+    width: 8rem;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.btn-cancelar-cb{
+    background-color: #FF3877;
+    color: white;
+    width: 8rem;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.area-div-1-cb{
+    width: 45%;
+    height: 90%;
+    background-color: red;
+}
+
+.area-div-2-cb{
+    width: 45%;
+    height: 75%;
+    background-color: red;
+    margin-top: -40%;
+    margin-left: 55%;
+}
+.area-btn-cb{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 10%;
+    gap: 90px;
+    margin-left: 55%;
 }

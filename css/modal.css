@@ -185,22 +185,109 @@
     text-decoration: none;
 }
 
-.div-decoratica-do-card-ProEv {
-    width: 120%;
-    height: 40%;
-    transform: rotate(-20deg);
-    position: relative;
-    bottom: 30%;
-    left: 2%;
-    background-color: rgba(0, 126, 112, 1);
+@media screen and (max-width: 510px){
+    #modal1,#modal3{
+        position: fixed;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/ModalRosaEdpass.svg);
+        width: 90%;
+        height: 30%;
+        background-image: none;
+        background-color: white;
+        border: 1px solid #FF3877;
+        background-size: cover;
+        border-radius: 20px;
+        display: none;
+    }
 
-    #linha-decorativa2-ProEv {
-        height: 200px;
-        border-right: 15px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        left: 23%;
-        top: 55%;
-        position: relative;
-        transform: rotate(-90deg);
+    #modal2,#modal4{
+        position: fixed;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/ModalRosaEdpass.svg);
+        width: 90%;
+        height: 30%;
+        background-image: none;
+        background-color: white;
+        border: 1px solid #007E70;
+        background-size: cover;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .modal-content-edpass {
+        height: 85%;
+        width: 80%;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    
+    .modal-img {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gg-img {
+        width: 85%;
+        height: 60%;
+        border-radius: 3px;
+        margin-top: 30%;
+        margin-bottom: 5%;
+        border: 1px solid #9b9b9b;
+    }
+    
+    .p-img{
+        display: none;
+    }
+    
+    .txt-content-modal {
+        width: 50%;
+        height: auto; 
+        max-height: none; 
+        margin-top: 40px; 
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .title-modal1{
+        width: 100%;
+        font-size: 15px;
+        color: #FF3877;
+        text-align: left;
+        margin-top: 5%;
+        text-transform: uppercase;
+    }
+    
+    .title-modal2{
+        width: 100%;
+        font-size: 15px;
+        color: #007E70;
+        text-align: left;
+        margin-top: 5%;
+        text-transform: uppercase;
+    }
+    
+    .area-texto {
+        height: 50%; 
+        margin-top: 10px; 
+        width: 100%;
+        scrollbar-gutter: stable both-edges;
+    }
+    
+    .modal-texto{
+        height: 90%; 
+        width: 90%;
+        font-size: 10px;
+        line-height: 1.4;
+        overflow-y: none; 
+        color: #505050;
+        text-align: left;
+        padding: 10px; 
     }
 }

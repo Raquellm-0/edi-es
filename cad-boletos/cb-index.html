@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cad-boletos/cb-css.css">
+    <title>Cadastro de Boletos</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <!-- inicio menu -->
+            <nav class="menu">
+    
+                <div class="logo"><!-- logo -->
+                    <a href="index.html"><img src="../img/logo.png" alt="Logo"></a>
+                </div>
+    
+                <div class="nav-bar"> <!-- navegação -->
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Quem Somos?</a></li>
+                    </ul>
+                    
+                    <div class="pesquisar-login">
+                        <div class="pesquisar"> <!-- area de pesquisa -->
+                            <input class="input" type="text" placeholder="Pesquisar por...">
+                            <div class="bola"  onclick="inputShow2()">
+                            </div>
+                        </div>
+                        <div class="login"> <!-- area login -->
+                            <a href="#"><img src="../img/login.png" alt="Login"></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pequisa-mobile">
+                    <div class="pesquisa"> <!-- area de pesquisa -->
+                        <input class="input" type="text" placeholder="Pesquisar por...">
+                        <div class="bola"  onclick="inputShow()">
+                        </div>
+                    </div>
+                    <div class="menu-icon">
+                        <button onclick="menuShow()"><img class="icon" src="../img/menu.png" alt="Menu"></button>
+                    </div>
+                </div>
+            </nav>
+            <!-- fim menu -->
+    
+            <!-- mobile menu -->
+            <div class="mobile-menu"> <!-- navegação -->
+                <ul class="nav-item">
+                    <li class="nav-item"><a href="../bosquedapaz/index.php">Início</a></li>
+                    <li class="nav-item"><a href="../bosquedapaz/app/client/Views/parceiros-bosque.php">Parceiros</a></li>
+                    <li class="nav-item"><a href="../bosquedapaz/app/client/Views/fale-conosco.php">Fale Conosco</a></li>
+                    <li class="nav-item"><a href="../bosquedapaz/app/client/Views/quem-somos.php">Quem Somos?</a></li>
+                </ul>
+    
+                <div class="btn-login"> <!-- area login -->
+                    <button class="btnlogin">Login</button>
+                </div>
+            </div>
+            <!-- mobile menu -->
+    </header>
+
+    <!-- formas -->
+        <section class="section-cb">
+            <div class="box-cb"></div>
+            <div class="forma-1-cb">
+                <img src="../img/edpassForma1.svg" alt="elemento1">
+            </div>
+            <div class="forma-3-cb">
+                <img src="../img/edpassForma3.svg" alt="elemento3">
+            </div>
+            <div class="forma-4-cb">
+                <img src="../img/edpassForma4.svg" alt="elemento4">
+            </div>
+            <button id="btn-voltar-cb">
+                <img href="#voltar-cb"  src="../img/voltar.svg" alt="">
+            </button>
+        <section/>
+
+        <main class="main-cb">
+            <div class="area-form-cb">
+                <!-- <div class="area-tt-cb">
+                    <h1 class="title-cb">CADASTRO DE BOLETO</h1>
+                </div> -->
+                <input  type="search" id="input" class="form-cb-btn-1" placeholder="Pesquisar nome do expositor">
+                <form class="form-cb">
+                    <div class="area-div-1-cb">
+                        <label class="label-cb">Expositor:</label>
+                        <input type="text" name="nome-exp" id="nome-exp" class="form-cb-btn" placeholder="Nome do Expositor" required>
+    
+                        <label>Arquivo em PDF:</label>
+                        <input type="file" name="arq-cb" id="arq-cb" class="form-cb-btn" placeholder="Selecionar Arquivo em PDF" required>
+    
+                        <label>Valor:</label>
+                        <input type="text" name="valor-cb" id="valor-cb" class="form-cb-btn"  placeholder="R$ 00,00">
+                    </div>
+
+                    <div class="area-div-2-cb">
+                        <label>CPF/CNPJ:</label>
+                        <input type="text" name="cpf-cb" id="cpf-cb" class="form-cb-btn"  placeholder="000.000.000-00 / 00.000.000/0000-00">
+                        
+                        <label>Referência:</label>
+                        <select name="input_select" id="referencia_select" class="form-cb-btn">
+                            <option value="">Janeiro</option>
+                            <option value="">Fevereiro</option>
+                            <option value="">Março</option>
+                            <option value="">Abril</option>
+                            <option value="">Maio</option>
+                            <option value="">Junho</option>
+                            <option value="">Julho</option>
+                            <option value="">Agosto</option>
+                            <option value="">Setembro</option>
+                            <option value="">Outubro</option>
+                            <option value="">Novembro</option>
+                            <option value="">Dezembro</option>
+                        </select>
+
+                        <label>Vencimento:</label>
+                        <input type="date" name="val-cb" id="val-cb" class="form-cb-btn"  placeholder="00/00/0000" required>
+                    </div>
+                    
+                    <div class="area-btn-cb">
+                        <button id="cancelar" class="btn-cancelar-cb">Cancelar</button>
+                        <button id="Salvar" class="btn-salvar-cb">Salvar</button>
+                    </div>
+                </form>
+        </main>
+</body>
+</html>
