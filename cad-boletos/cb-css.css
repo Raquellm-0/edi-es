@@ -361,14 +361,13 @@ body {
         width: 35px;
         height: 35px;
     }
-
 }
 
 
 #btn-voltar-cb {
     font-size: 30px;
-    margin-right: 78%;
     margin-top: 35%;
+    margin-right: 5%;
     z-index: 10;
     border: none;
     background-color: transparent;
@@ -383,28 +382,6 @@ body {
     z-index: 2;
     font-weight: 500;
 }
-
-/* .pesquisar-login {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.pesquisa {
-    display: flex;
-    align-items: center;
-    width: auto;
-    margin-right: 50px;
-}
-
-.pesquisa input {
-    width: 70%;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: -25px;
-    padding-left: 5px;
-} */
 
 .forma-1-cb{
     position: absolute;
@@ -462,7 +439,7 @@ body {
     display: flex;
     position: relative;
     z-index: 2;
-    margin-left: -54%;
+    margin-left: -5%;
     justify-content: center;
     align-items: center;
 }
@@ -470,6 +447,7 @@ body {
 .area-form-cb{
     width: 90%;
     height: 90%;
+    margin-top: 110%;
 }
 
 .form-cb{
@@ -479,14 +457,16 @@ body {
     margin-left: 5%;
 }
 
-.form-cb-btn{
+.form-cb-input{
     width: 100%;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #007E70;
     font-size: 15px;
-    padding: 10px;
+    padding: 10px 10px;
     margin-top: 2px;
+    color: #828080;
+    cursor: pointer;
 }
 
 .label-cb{
@@ -496,7 +476,6 @@ body {
 .form-cb-btn-1{
     width: 74rem;
     height: 3rem;
-    border-radius: 10px;
     border: 1px solid #007E70;
     padding: 10px;
     margin-left: 60px;
@@ -511,6 +490,7 @@ body {
     border-radius: 10px;
     font-size: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .btn-cancelar-cb{
@@ -521,6 +501,7 @@ body {
     border-radius: 10px;
     font-size: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .area-div-1-cb{
@@ -528,7 +509,7 @@ body {
     height: 90%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
 }
 
 .area-div-2-cb{
@@ -538,7 +519,7 @@ body {
     margin-left: 55%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
 }
 .area-btn-cb{
     display: flex;
@@ -548,4 +529,84 @@ body {
     height: 10%;
     gap: 280px;
     margin-left: 55%;
+}
+
+.pesquisa-cb {
+    display: flex;
+    align-items: center;
+    width: 95rem;
+    margin-right: 50px;
+}
+
+.pesquisa-cb input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 65px;
+    margin-top: 30px;
+    border: 1px solid #007E70;
+}
+
+.pesquisa-cb .bola-cb {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #007E70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Lupa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-top: 30px;
+    margin-left: 3%;
+}
+
+#option-cb{
+    border: 1px solid #626262b9;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-label {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #007E70;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    color: #828080;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-file-label:hover {
+    background: #f0f0f0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+
+@media screen and (max-width: 510px) {
+
+}
+
+@media screen and (max-width: 750px) {
+
+}
+
+@media(max-width: 1500px) {
+    
 }
